@@ -1,25 +1,555 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="WXr-0H-NMW">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Login View Controller-->
+        <scene sceneID="MR4-cb-mb5">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WXr-0H-NMW" customClass="LoginViewController" customModule="WhatsAppClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="czm-rv-9DI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gc1-fS-0Gq"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="a4k-Ui-VVM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPa-Q9-qcg">
+                                <rect key="frame" x="20" y="144" width="280" height="280"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="USERNAME" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="76D-fu-jmC" customClass="CustomizableTextField" customModule="WhatsAppClone" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="8" width="272" height="50"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="272" id="TpB-H8-azW"/>
+                                            <constraint firstAttribute="height" constant="50" id="xmo-oo-gPf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoD-sX-peX" customClass="CustomizableButton" customModule="WhatsAppClone" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="132" width="272" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="272" id="Ban-iw-Ks8"/>
+                                            <constraint firstAttribute="height" constant="50" id="GtE-kF-ah7"/>
+                                        </constraints>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginAction:" destination="WXr-0H-NMW" eventType="touchUpInside" id="fp4-sR-8Nu"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="84d-II-puV" customClass="CustomizableTextField" customModule="WhatsAppClone" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="70" width="272" height="50"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="272" id="H1N-bn-csR"/>
+                                            <constraint firstAttribute="height" constant="50" id="xG1-kZ-hco"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytZ-XK-jPK" customClass="CustomizableButton" customModule="WhatsAppClone" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="198" width="272" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="272" id="b2d-MN-gwo"/>
+                                            <constraint firstAttribute="height" constant="50" id="maH-c8-dIv"/>
+                                        </constraints>
+                                        <state key="normal" title="No Account? Sign Up">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="MKW-LK-2d4" kind="modal" modalTransitionStyle="coverVertical" id="vXi-pt-nfg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTu-QZ-Yg9">
+                                        <rect key="frame" x="4" y="256" width="272" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="272" id="h62-mD-F3o"/>
+                                            <constraint firstAttribute="height" constant="24" id="zow-Cd-cHE"/>
+                                        </constraints>
+                                        <state key="normal" title="Forgot Password? ">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="WOh-ug-F0h" kind="modal" modalTransitionStyle="coverVertical" id="OKz-6Q-kh0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="84d-II-puV" firstAttribute="top" secondItem="76D-fu-jmC" secondAttribute="bottom" constant="12" id="4IE-VC-H3y"/>
+                                    <constraint firstItem="FTu-QZ-Yg9" firstAttribute="top" secondItem="ytZ-XK-jPK" secondAttribute="bottom" constant="8" symbolic="YES" id="Adu-q4-l7E"/>
+                                    <constraint firstItem="VoD-sX-peX" firstAttribute="centerX" secondItem="RPa-Q9-qcg" secondAttribute="centerX" id="LmK-up-mVk"/>
+                                    <constraint firstAttribute="width" constant="280" id="MVH-ci-6UD"/>
+                                    <constraint firstItem="ytZ-XK-jPK" firstAttribute="leading" secondItem="FTu-QZ-Yg9" secondAttribute="leading" id="Wel-KD-k4e"/>
+                                    <constraint firstItem="84d-II-puV" firstAttribute="centerX" secondItem="RPa-Q9-qcg" secondAttribute="centerX" id="ZAI-B0-IDm"/>
+                                    <constraint firstItem="ytZ-XK-jPK" firstAttribute="top" secondItem="VoD-sX-peX" secondAttribute="bottom" constant="16" id="Zco-uo-RBy"/>
+                                    <constraint firstItem="76D-fu-jmC" firstAttribute="top" secondItem="RPa-Q9-qcg" secondAttribute="top" constant="8" id="daU-pG-Khr"/>
+                                    <constraint firstItem="FTu-QZ-Yg9" firstAttribute="centerX" secondItem="RPa-Q9-qcg" secondAttribute="centerX" id="mEv-yQ-mdz"/>
+                                    <constraint firstItem="76D-fu-jmC" firstAttribute="centerX" secondItem="RPa-Q9-qcg" secondAttribute="centerX" id="nMg-MR-hWT"/>
+                                    <constraint firstAttribute="height" constant="280" id="v3M-g1-ULd"/>
+                                    <constraint firstItem="VoD-sX-peX" firstAttribute="top" secondItem="84d-II-puV" secondAttribute="bottom" constant="12" id="xLF-VJ-iQv"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBG.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="qAc-bf-w9h">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qAc-bf-w9h" firstAttribute="leading" secondItem="a4k-Ui-VVM" secondAttribute="leading" id="GE7-oQ-70o"/>
+                            <constraint firstAttribute="trailing" secondItem="qAc-bf-w9h" secondAttribute="trailing" id="L0g-sv-VuV"/>
+                            <constraint firstItem="RPa-Q9-qcg" firstAttribute="centerX" secondItem="a4k-Ui-VVM" secondAttribute="centerX" id="L7a-Ls-B4J"/>
+                            <constraint firstItem="RPa-Q9-qcg" firstAttribute="centerY" secondItem="a4k-Ui-VVM" secondAttribute="centerY" id="LbC-PL-pYc"/>
+                            <constraint firstItem="qAc-bf-w9h" firstAttribute="top" secondItem="a4k-Ui-VVM" secondAttribute="top" id="V7f-ot-68F"/>
+                            <constraint firstItem="Gc1-fS-0Gq" firstAttribute="top" secondItem="qAc-bf-w9h" secondAttribute="bottom" id="eQm-JO-9GO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginView" destination="RPa-Q9-qcg" id="SFt-J9-b7u"/>
+                        <outlet property="passwordTextField" destination="84d-II-puV" id="aXK-Ee-90Q"/>
+                        <outlet property="usernameTextField" destination="76D-fu-jmC" id="Uuk-1W-rWC"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i81-Nu-Rp3" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="234" y="377"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="Gmz-aw-txi">
+            <objects>
+                <viewController id="MKW-LK-2d4" customClass="SignupViewController" customModule="WhatsAppClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YWM-Jf-4Bs"/>
+                        <viewControllerLayoutGuide type="bottom" id="EXN-Hu-9Yi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l7m-Nw-Beo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SignupBG.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="DGF-SJ-ogI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QrV-C3-Dic">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-placeholder.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2Qe-10-x9l" customClass="CustomizableImageView" customModule="WhatsAppClone" customModuleProvider="target">
+                                        <rect key="frame" x="85" y="20" width="150" height="150"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="VxR-Kl-cDE"/>
+                                            <constraint firstAttribute="width" constant="150" id="fUr-7D-OML"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="75"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="b90-p0-Zu8" appends="YES" id="4Or-Xi-gwe"/>
+                                        </connections>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4y9-Hq-AeE" customClass="CustomizableButton" customModule="WhatsAppClone" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="480" width="272" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bFw-Cq-23F"/>
+                                            <constraint firstAttribute="width" constant="272" id="dg2-l2-zmF"/>
+                                        </constraints>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginAction:" destination="WXr-0H-NMW" eventType="touchUpInside" id="PrQ-bx-Jc0"/>
+                                            <action selector="signUpAction:" destination="MKW-LK-2d4" eventType="touchUpInside" id="Caf-Cj-mMR"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="USERNAME" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="w2N-vH-ajz" customClass="CustomizableTextField" customModule="WhatsAppClone" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="178" width="272" height="50"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="272" id="3W0-fk-Frw"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="272" id="9YD-1R-g1L"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="FOU-Lq-4Bt"/>
+                                            <constraint firstAttribute="height" constant="50" id="tDH-Wr-XFy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nld-qB-QVD" customClass="CustomizableTextField" customModule="WhatsAppClone" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="236" width="272" height="50"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="272" id="0hQ-mB-1Sd"/>
+                                            <constraint firstAttribute="width" constant="272" id="8DB-OW-I0e"/>
+                                            <constraint firstAttribute="height" constant="50" id="alU-Nr-KGw"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="yZe-LI-Lff"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="COUNTRY" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eI8-c2-0y6" customClass="CustomizableTextField" customModule="WhatsAppClone" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="352" width="272" height="50"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="COF-li-UDu"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="272" id="tdA-tR-qaH"/>
+                                            <constraint firstAttribute="width" constant="272" id="wis-w9-Va7"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="wiu-yB-K0M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="BIOGRAPHY" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eeB-Pa-lji" customClass="CustomizableTextField" customModule="WhatsAppClone" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="294" width="272" height="50"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="272" id="95L-vL-9qj"/>
+                                            <constraint firstAttribute="height" constant="50" id="Ei2-ea-hRA"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Mgr-QF-c9u"/>
+                                            <constraint firstAttribute="width" constant="272" id="gAf-JW-nnc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ndw-Nr-TVg" customClass="CustomizableTextField" customModule="WhatsAppClone" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="410" width="272" height="50"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="XGp-it-zIF"/>
+                                            <constraint firstAttribute="width" constant="272" id="vfx-Mh-YdT"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="272" id="wsm-g7-Msk"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="xAX-oF-tAt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eU-qM-YXn" customClass="CustomizableButton" customModule="WhatsAppClone" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="q6f-pU-wfW"/>
+                                            <constraint firstAttribute="height" constant="50" id="xvt-zP-dut"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="5Ag-ja-zmv" kind="unwind" unwindAction="unwindToLogin:" id="bKc-hF-Tee"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2Qe-10-x9l" firstAttribute="centerX" secondItem="QrV-C3-Dic" secondAttribute="centerX" id="2hm-Hv-icW"/>
+                                    <constraint firstItem="nld-qB-QVD" firstAttribute="centerX" secondItem="QrV-C3-Dic" secondAttribute="centerX" id="6m3-58-ADv"/>
+                                    <constraint firstItem="ndw-Nr-TVg" firstAttribute="centerX" secondItem="QrV-C3-Dic" secondAttribute="centerX" id="7s8-mQ-WQh"/>
+                                    <constraint firstItem="4y9-Hq-AeE" firstAttribute="top" secondItem="ndw-Nr-TVg" secondAttribute="bottom" constant="20" id="JYc-vr-cR9"/>
+                                    <constraint firstItem="eeB-Pa-lji" firstAttribute="centerX" secondItem="QrV-C3-Dic" secondAttribute="centerX" id="MO2-IR-Xg8"/>
+                                    <constraint firstAttribute="trailing" secondItem="4y9-Hq-AeE" secondAttribute="trailing" constant="24" id="Nmm-rI-cTi"/>
+                                    <constraint firstItem="4y9-Hq-AeE" firstAttribute="leading" secondItem="ndw-Nr-TVg" secondAttribute="leading" id="OIW-Nq-Bpg"/>
+                                    <constraint firstItem="nld-qB-QVD" firstAttribute="top" secondItem="w2N-vH-ajz" secondAttribute="bottom" constant="8" id="Rnr-rz-Fke"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Qe-10-x9l" secondAttribute="bottom" constant="515" id="Sp3-Aw-cpu"/>
+                                    <constraint firstItem="8eU-qM-YXn" firstAttribute="leading" secondItem="QrV-C3-Dic" secondAttribute="leading" constant="20" id="Uvs-kR-ihq"/>
+                                    <constraint firstItem="eI8-c2-0y6" firstAttribute="centerX" secondItem="QrV-C3-Dic" secondAttribute="centerX" id="gm8-ud-BeJ"/>
+                                    <constraint firstItem="eI8-c2-0y6" firstAttribute="top" secondItem="eeB-Pa-lji" secondAttribute="bottom" constant="8" id="jNg-MP-wqT"/>
+                                    <constraint firstItem="8eU-qM-YXn" firstAttribute="top" secondItem="QrV-C3-Dic" secondAttribute="top" constant="20" id="mzZ-To-fcC"/>
+                                    <constraint firstItem="w2N-vH-ajz" firstAttribute="centerX" secondItem="QrV-C3-Dic" secondAttribute="centerX" id="oW5-Yn-iF3"/>
+                                    <constraint firstItem="eeB-Pa-lji" firstAttribute="top" secondItem="nld-qB-QVD" secondAttribute="bottom" constant="8" id="r0b-T4-rCa"/>
+                                    <constraint firstItem="ndw-Nr-TVg" firstAttribute="top" secondItem="eI8-c2-0y6" secondAttribute="bottom" constant="8" id="wwJ-9b-Ihu"/>
+                                    <constraint firstItem="2Qe-10-x9l" firstAttribute="top" secondItem="QrV-C3-Dic" secondAttribute="top" constant="20" id="yS9-97-FAy"/>
+                                    <constraint firstItem="w2N-vH-ajz" firstAttribute="top" secondItem="2Qe-10-x9l" secondAttribute="bottom" constant="8" id="zY5-IQ-6j3"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DGF-SJ-ogI" secondAttribute="trailing" id="HNS-59-1tV"/>
+                            <constraint firstItem="QrV-C3-Dic" firstAttribute="trailing" secondItem="DGF-SJ-ogI" secondAttribute="trailing" id="Me5-Vc-zil"/>
+                            <constraint firstItem="DGF-SJ-ogI" firstAttribute="top" secondItem="l7m-Nw-Beo" secondAttribute="top" id="NUy-He-jZm"/>
+                            <constraint firstItem="QrV-C3-Dic" firstAttribute="top" secondItem="l7m-Nw-Beo" secondAttribute="top" id="Ndu-fS-xY6"/>
+                            <constraint firstItem="QrV-C3-Dic" firstAttribute="top" secondItem="DGF-SJ-ogI" secondAttribute="top" id="XEs-aT-YOD"/>
+                            <constraint firstItem="QrV-C3-Dic" firstAttribute="leading" secondItem="DGF-SJ-ogI" secondAttribute="leading" id="b2F-dd-lRW"/>
+                            <constraint firstItem="EXN-Hu-9Yi" firstAttribute="top" secondItem="DGF-SJ-ogI" secondAttribute="bottom" id="isq-vc-PFl"/>
+                            <constraint firstItem="QrV-C3-Dic" firstAttribute="leading" secondItem="l7m-Nw-Beo" secondAttribute="leading" id="k6P-gg-0mJ"/>
+                            <constraint firstItem="QrV-C3-Dic" firstAttribute="centerX" secondItem="l7m-Nw-Beo" secondAttribute="centerX" id="lhJ-uV-NOu"/>
+                            <constraint firstItem="DGF-SJ-ogI" firstAttribute="leading" secondItem="l7m-Nw-Beo" secondAttribute="leading" id="nta-mj-xkb"/>
+                            <constraint firstAttribute="trailing" secondItem="QrV-C3-Dic" secondAttribute="trailing" id="ppF-vS-l7p"/>
+                            <constraint firstItem="EXN-Hu-9Yi" firstAttribute="top" secondItem="QrV-C3-Dic" secondAttribute="bottom" id="wZm-rm-Jkw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="biographyTextField" destination="eeB-Pa-lji" id="PH2-Z7-uhQ"/>
+                        <outlet property="countryTextField" destination="eI8-c2-0y6" id="KeS-Cn-UAj"/>
+                        <outlet property="emailTextField" destination="nld-qB-QVD" id="zA2-Nn-b7V"/>
+                        <outlet property="passwordTextField" destination="ndw-Nr-TVg" id="fh7-oI-NiG"/>
+                        <outlet property="userImageView" destination="2Qe-10-x9l" id="vKU-b7-6vi"/>
+                        <outlet property="usernameTextField" destination="w2N-vH-ajz" id="fhW-G6-vfo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kgj-XV-CLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5Ag-ja-zmv" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="b90-p0-Zu8">
+                    <connections>
+                        <action selector="choosePictureAction:" destination="MKW-LK-2d4" id="mYd-ED-jji"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="574" y="377"/>
+        </scene>
+        <!--Reset Password View Controller-->
+        <scene sceneID="mtC-5d-hto">
+            <objects>
+                <viewController id="WOh-ug-F0h" customClass="ResetPasswordViewController" customModule="WhatsAppClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QE3-tq-zMw"/>
+                        <viewControllerLayoutGuide type="bottom" id="vZB-6U-FA0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KPx-bT-Igv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ResetBG.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Fdd-bs-Raf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vj4-I1-OvJ">
+                                <rect key="frame" x="20" y="144" width="280" height="280"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jyi-0o-hDe" customClass="CustomizableTextField" customModule="WhatsAppClone" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="84" width="272" height="50"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FQ3-Fj-kAb"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="IdY-md-kpr"/>
+                                            <constraint firstAttribute="width" constant="272" id="PN7-UK-OjX"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="272" id="ZmT-m2-P6i"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qd-Ih-tUG" customClass="CustomizableButton" customModule="WhatsAppClone" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="142" width="272" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="272" id="Vyn-dR-QPQ"/>
+                                            <constraint firstAttribute="height" constant="50" id="wUJ-pk-7no"/>
+                                        </constraints>
+                                        <state key="normal" title="Reset Password">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginAction:" destination="WXr-0H-NMW" eventType="touchUpInside" id="YFB-tq-4zo"/>
+                                            <action selector="resetPasswordAction:" destination="WOh-ug-F0h" eventType="touchUpInside" id="xkQ-Sv-gL6"/>
+                                            <action selector="signUpAction:" destination="MKW-LK-2d4" eventType="touchUpInside" id="69u-Mf-05P"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="0sx-wM-crF"/>
+                                    <constraint firstItem="2Qd-Ih-tUG" firstAttribute="centerX" secondItem="vj4-I1-OvJ" secondAttribute="centerX" id="AFg-GJ-5yS"/>
+                                    <constraint firstItem="2Qd-Ih-tUG" firstAttribute="top" secondItem="Jyi-0o-hDe" secondAttribute="bottom" constant="8" id="OUE-65-aNR"/>
+                                    <constraint firstAttribute="height" constant="280" id="mYi-qW-Ml7"/>
+                                    <constraint firstItem="Jyi-0o-hDe" firstAttribute="centerX" secondItem="vj4-I1-OvJ" secondAttribute="centerX" id="yrN-CI-QsZ"/>
+                                    <constraint firstItem="Jyi-0o-hDe" firstAttribute="top" secondItem="vj4-I1-OvJ" secondAttribute="top" constant="84" id="zPi-NL-LSZ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUv-KZ-YU4" customClass="CustomizableButton" customModule="WhatsAppClone" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GoJ-vL-221"/>
+                                    <constraint firstAttribute="width" constant="50" id="onu-Vs-klq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="kO2-Rr-zfD" kind="unwind" unwindAction="unwindToLogin:" id="C6y-bR-45T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IUv-KZ-YU4" firstAttribute="top" secondItem="QE3-tq-zMw" secondAttribute="bottom" id="0Yx-Qe-Udf"/>
+                            <constraint firstItem="vj4-I1-OvJ" firstAttribute="centerX" secondItem="KPx-bT-Igv" secondAttribute="centerX" id="IU8-we-rO3"/>
+                            <constraint firstItem="vZB-6U-FA0" firstAttribute="top" secondItem="Fdd-bs-Raf" secondAttribute="bottom" id="JUx-53-OvY"/>
+                            <constraint firstItem="vj4-I1-OvJ" firstAttribute="centerY" secondItem="KPx-bT-Igv" secondAttribute="centerY" id="MTa-rV-I2T"/>
+                            <constraint firstItem="Fdd-bs-Raf" firstAttribute="top" secondItem="KPx-bT-Igv" secondAttribute="top" id="ccl-AK-arp"/>
+                            <constraint firstItem="Fdd-bs-Raf" firstAttribute="leading" secondItem="KPx-bT-Igv" secondAttribute="leading" id="ggo-1u-Wn9"/>
+                            <constraint firstAttribute="trailing" secondItem="Fdd-bs-Raf" secondAttribute="trailing" id="hB4-Yi-8xt"/>
+                            <constraint firstItem="IUv-KZ-YU4" firstAttribute="leading" secondItem="KPx-bT-Igv" secondAttribute="leadingMargin" id="mPg-Kb-N2g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Jyi-0o-hDe" id="zRl-ha-7jW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tUP-1t-Vfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="kO2-Rr-zfD" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="377"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="i79-Ls-WzC">
+            <objects>
+                <tabBarController storyboardIdentifier="Home" id="b36-mH-Kf1" customClass="TabBarController" customModule="WhatsAppClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="4rD-SG-H3f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.1960784314" green="0.23529411759999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZTg-mY-WUW" kind="relationship" relationship="viewControllers" id="wPK-q0-1Mn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBN-0k-O1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="986"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="RGP-9L-Oeg">
+            <objects>
+                <tableViewController id="3w1-ry-haP" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="328" sectionHeaderHeight="28" sectionFooterHeight="28" id="7RM-aK-4vo">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="328" id="ueO-b8-ocm">
+                                <rect key="frame" x="0.0" y="28" width="320" height="328"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ueO-b8-ocm" id="WPA-de-S9L">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="327.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3w1-ry-haP" id="P27-Fg-haL"/>
+                            <outlet property="delegate" destination="3w1-ry-haP" id="dRA-8b-jGw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="8JC-LZ-SuS"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QER-Vo-jrA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1168" y="1126"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Ha3-yJ-XvK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZTg-mY-WUW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="RHK-BK-zGJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="BQS-US-Sx9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1960784314" green="0.23529411759999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3w1-ry-haP" kind="relationship" relationship="rootViewController" id="qxO-xw-LNI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LtH-U4-Vvo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="1118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LoginBG.jpeg" width="5616" height="3400"/>
+        <image name="ResetBG.jpeg" width="2048" height="1365"/>
+        <image name="SignupBG.jpeg" width="4356" height="3443"/>
+        <image name="user-placeholder.jpg" width="300" height="300"/>
+    </resources>
 </document>
