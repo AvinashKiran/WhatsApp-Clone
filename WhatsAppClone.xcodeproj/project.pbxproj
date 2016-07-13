@@ -33,6 +33,9 @@
 		2750343D1D36A44F00D8FBBE /* LoginBG.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2750343A1D36A44F00D8FBBE /* LoginBG.jpeg */; };
 		2750343E1D36A44F00D8FBBE /* ResetBG.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2750343B1D36A44F00D8FBBE /* ResetBG.jpeg */; };
 		2750343F1D36A44F00D8FBBE /* SignupBG.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2750343C1D36A44F00D8FBBE /* SignupBG.jpeg */; };
+		275034451D36E73B00D8FBBE /* ConversationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275034441D36E73B00D8FBBE /* ConversationsTableViewCell.swift */; };
+		275034471D36E87B00D8FBBE /* plachold.png in Resources */ = {isa = PBXBuildFile; fileRef = 275034461D36E87B00D8FBBE /* plachold.png */; };
+		275034491D36E8B700D8FBBE /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275034481D36E8B700D8FBBE /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,10 @@
 		2750343A1D36A44F00D8FBBE /* LoginBG.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LoginBG.jpeg; sourceTree = "<group>"; };
 		2750343B1D36A44F00D8FBBE /* ResetBG.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ResetBG.jpeg; sourceTree = "<group>"; };
 		2750343C1D36A44F00D8FBBE /* SignupBG.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignupBG.jpeg; sourceTree = "<group>"; };
+		275034401D36E6B000D8FBBE /* WhatsAppClone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhatsAppClone-Bridging-Header.h"; sourceTree = "<group>"; };
+		275034441D36E73B00D8FBBE /* ConversationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsTableViewCell.swift; sourceTree = "<group>"; };
+		275034461D36E87B00D8FBBE /* plachold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plachold.png; sourceTree = "<group>"; };
+		275034481D36E8B700D8FBBE /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +124,7 @@
 			children = (
 				275033E71D368F9300D8FBBE /* AppDelegate.swift */,
 				2750341E1D3692C000D8FBBE /* TabBarController.swift */,
+				2750344A1D36E8CF00D8FBBE /* Settings View Controllers */,
 				275034371D36948000D8FBBE /* Chat View Controllers */,
 				275034381D3694C100D8FBBE /* My Profile View Controllers */,
 				275034391D3694D200D8FBBE /* Posts View Controllers */,
@@ -128,6 +136,7 @@
 		2750340F1D36906200D8FBBE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				275034461D36E87B00D8FBBE /* plachold.png */,
 				2750343A1D36A44F00D8FBBE /* LoginBG.jpeg */,
 				2750343B1D36A44F00D8FBBE /* ResetBG.jpeg */,
 				2750343C1D36A44F00D8FBBE /* SignupBG.jpeg */,
@@ -153,6 +162,7 @@
 				275033EE1D368F9300D8FBBE /* Assets.xcassets */,
 				275033F01D368F9300D8FBBE /* LaunchScreen.storyboard */,
 				275033F31D368F9300D8FBBE /* Info.plist */,
+				275034401D36E6B000D8FBBE /* WhatsAppClone-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -173,6 +183,7 @@
 				275034201D36931800D8FBBE /* UsersTableViewController.swift */,
 				275034351D36943E00D8FBBE /* UsersTableViewCell.swift */,
 				275034221D36932600D8FBBE /* ConversationsTableViewController.swift */,
+				275034441D36E73B00D8FBBE /* ConversationsTableViewCell.swift */,
 				275034261D3693A400D8FBBE /* ChatViewController.swift */,
 			);
 			name = "Chat View Controllers";
@@ -197,6 +208,14 @@
 				275034331D36942C00D8FBBE /* PostImageTableViewCell.swift */,
 			);
 			name = "Posts View Controllers";
+			sourceTree = "<group>";
+		};
+		2750344A1D36E8CF00D8FBBE /* Settings View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				275034481D36E8B700D8FBBE /* SettingsTableViewController.swift */,
+			);
+			name = "Settings View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +282,7 @@
 				275033EF1D368F9300D8FBBE /* Assets.xcassets in Resources */,
 				275034091D368FFF00D8FBBE /* user-placeholder.jpg in Resources */,
 				275033ED1D368F9300D8FBBE /* Main.storyboard in Resources */,
+				275034471D36E87B00D8FBBE /* plachold.png in Resources */,
 				2750343D1D36A44F00D8FBBE /* LoginBG.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +298,7 @@
 				2750342E1D36940100D8FBBE /* AddPostViewController.swift in Sources */,
 				275034161D36910000D8FBBE /* SignupViewController.swift in Sources */,
 				275034361D36943E00D8FBBE /* UsersTableViewCell.swift in Sources */,
+				275034451D36E73B00D8FBBE /* ConversationsTableViewCell.swift in Sources */,
 				2750342A1D3693E200D8FBBE /* CommentsTableViewController.swift in Sources */,
 				2750341F1D3692C000D8FBBE /* TabBarController.swift in Sources */,
 				275034211D36931800D8FBBE /* UsersTableViewController.swift in Sources */,
@@ -293,6 +314,7 @@
 				275034271D3693A400D8FBBE /* ChatViewController.swift in Sources */,
 				275034171D36910000D8FBBE /* ResetPasswordViewController.swift in Sources */,
 				2750342C1D3693EF00D8FBBE /* PostsTableViewController.swift in Sources */,
+				275034491D36E8B700D8FBBE /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,10 +427,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WhatsAppClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MaranathApp.WhatsAppClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhatsAppClone/WhatsAppClone-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -416,10 +441,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WhatsAppClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MaranathApp.WhatsAppClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhatsAppClone/WhatsAppClone-Bridging-Header.h";
 			};
 			name = Release;
 		};
