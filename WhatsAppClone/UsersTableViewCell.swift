@@ -10,6 +10,9 @@ import UIKit
 
 class UsersTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var userCountryLabel: UILabel!
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var userImageView: CustomizableImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

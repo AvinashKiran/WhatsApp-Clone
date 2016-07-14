@@ -1,5 +1,5 @@
 //
-//  PostTextTableViewCell.swift
+//  CommentTableViewCell.swift
 //  WhatsAppClone
 //
 //  Created by Frezy Stone Mboumba on 7/13/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PostTextTableViewCell: UITableViewCell {
+class CommentTextTableViewCell: UITableViewCell {
 
     @IBOutlet weak var likelabel: UILabel!
     @IBOutlet weak var likeButton: UIButton!
@@ -24,5 +24,4 @@ class PostTextTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    
 }
