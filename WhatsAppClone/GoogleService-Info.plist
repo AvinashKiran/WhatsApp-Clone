@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>847821489858-uibd27aul3jnchcb9157ngdovlnekkrq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.847821489858-uibd27aul3jnchcb9157ngdovlnekkrq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDllUu3vXf1Q2RXg3kCJJ4-39dhlw2ZsSo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>847821489858</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.MaranathApp.WhatsAppClone</string>
+	<key>PROJECT_ID</key>
+	<string>whatsapp-clone-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>whatsapp-clone-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:847821489858:ios:421787dfa762a165</string>
+	<key>DATABASE_URL</key>
+	<string>https://whatsapp-clone-app.firebaseio.com</string>
+</dict>
+</plist>
