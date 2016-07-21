@@ -47,6 +47,9 @@ struct AuthenticationService {
                 if let user = user {
                     
                     print("\(user.displayName!) has signed in successfuly")
+                  
+                    let appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                    appDel.logUser()
                 }
                 
             }else {
@@ -81,9 +84,14 @@ struct AuthenticationService {
         
         FIRAuth.auth()?.sendPasswordResetWithEmail(email, completion: { (error) in
             if error == nil {
-                let alertView =  SCLAlertView()
-
-                alertView.showSuccess("Resetting Password", subTitle: "An email containing the different information on how to reset your password has been sent to \(email)")
+                
+                dispatch_async(dispatch_get_main_queue(), { 
+                    let alertView =  SCLAlertView()
+                    
+                    alertView.showSuccess("Resetting Password", subTitle: "An email containing the different information on how to reset your password has been sent to \(email)")
+                })
+                
+                
                 
             }else {
                 

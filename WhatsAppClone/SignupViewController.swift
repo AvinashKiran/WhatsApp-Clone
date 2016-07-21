@@ -19,6 +19,7 @@ class SignupViewController: UIViewController,UITextFieldDelegate,UIPickerViewDel
     
     var pickerView: UIPickerView!
     var countryArrays = [String]()
+    var authService = AuthenticationService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +61,28 @@ class SignupViewController: UIViewController,UITextFieldDelegate,UIPickerViewDel
 
     // Signing up the User
     @IBAction func signUpAction(sender: AnyObject) {
+  
+        let data = UIImageJPEGRepresentation(self.userImageView.image!, 0.8)
+        let email = emailTextField.text!.lowercaseString
+        let finalEmail = email.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        let username = usernameTextField.text!
+        let password = passwordTextField.text!
+        let country = countryTextField.text!
+        let biography = biographyTextField.text!
+        
+        if username.isEmpty || password.isEmpty || finalEmail.isEmpty || country.isEmpty || biography.isEmpty || data == nil {
+            self.view.endEditing(true)
+
+            let alertView = SCLAlertView()
+            alertView.showError("😁OOPS😁", subTitle: "it seems like one of the Fields is empty. Please fill all the Fields and Try Again later.")
+        } else {
+            self.view.endEditing(true)
+
+            authService.signUp(finalEmail, username: username, password: password, country: country, biography: biography, data: data)
+        }
+        
+        
+        
     }
 
     // Choosing User Picture

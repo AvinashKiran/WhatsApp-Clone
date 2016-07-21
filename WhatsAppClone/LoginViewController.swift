@@ -14,6 +14,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginView: UIView!
     
+    var authService = AuthenticationService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -78,7 +80,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
  
     // Loging in the User
     @IBAction func loginAction(sender: AnyObject) {
-    
+        let email = usernameTextField.text!.lowercaseString
+        let finalEmail = email.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        let password = passwordTextField.text!
+        
+        if finalEmail.isEmpty || password.isEmpty {
+            self.view.endEditing(true)
+
+            let alertView = SCLAlertView()
+            alertView.showError("😁OOPS😁", subTitle: "it seems like one of the Fields is empty. Please fill all the Fields and Try Again later.")
+            
+        }else {
+            self.view.endEditing(true)
+            authService.signIn(finalEmail, password: password)
+            
+        }
+        
     }
 
 }

@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
-
+    
+    var authService = AuthenticationService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +41,18 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
     
     // Resetting the User Password
     @IBAction func resetPasswordAction(sender: AnyObject) {
+        let email = emailTextField.text!.lowercaseString
+        let finalEmail = email.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         
+        if finalEmail.isEmpty {
+            self.view.endEditing(true)
+            let alertView = SCLAlertView()
+            alertView.showError("😁OOPS😁", subTitle: "You need to provide a valid email address in order to reset your password. Please do it and try again later.")
+        }else {
+            self.view.endEditing(true)
+
+            authService.resetPassword(finalEmail)
+        }
     }
     
     // Dismissing all editing actions when User Tap or Swipe down on the Main View

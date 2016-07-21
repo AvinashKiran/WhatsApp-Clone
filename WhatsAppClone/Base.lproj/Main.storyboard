@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="b36-mH-Kf1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="WXr-0H-NMW">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -9,7 +9,7 @@
         <!--Login View Controller-->
         <scene sceneID="MR4-cb-mb5">
             <objects>
-                <viewController id="WXr-0H-NMW" customClass="LoginViewController" customModule="WhatsAppClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="WXr-0H-NMW" customClass="LoginViewController" customModule="WhatsAppClone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="czm-rv-9DI"/>
                         <viewControllerLayoutGuide type="bottom" id="Gc1-fS-0Gq"/>
@@ -21,7 +21,7 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPa-Q9-qcg">
                                 <rect key="frame" x="20" y="144" width="280" height="280"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="USERNAME" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="76D-fu-jmC" customClass="CustomizableTextField" customModule="WhatsAppClone" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="76D-fu-jmC" customClass="CustomizableTextField" customModule="WhatsAppClone" customModuleProvider="target">
                                         <rect key="frame" x="4" y="8" width="272" height="50"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -478,7 +478,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="i79-Ls-WzC">
             <objects>
-                <tabBarController storyboardIdentifier="Home" id="b36-mH-Kf1" customClass="TabBarController" customModule="WhatsAppClone" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBar" id="b36-mH-Kf1" customClass="TabBarController" customModule="WhatsAppClone" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="4rD-SG-H3f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -526,9 +526,90 @@
                     <view key="view" contentMode="scaleToFill" id="yAl-ki-3AT">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-placeholder.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OmJ-D9-rOv" customClass="CustomizableImageView" customModule="WhatsAppClone" customModuleProvider="target">
+                                <rect key="frame" x="100" y="20" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="MJM-Bb-yt7"/>
+                                    <constraint firstAttribute="width" constant="120" id="x7A-mg-iUa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfD-W2-cPT">
+                                <rect key="frame" x="16" y="160" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PJO-H8-Kah"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CID-IQ-9mB">
+                                <rect key="frame" x="16" y="251" width="288" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="kFg-eh-ZGp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RQ-QL-3JI">
+                                <rect key="frame" x="16" y="280" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mSm-LM-OFo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="0ER-ri-45M">
+                                <rect key="frame" x="16" y="189" width="288" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="3CC-Km-LBa"/>
+                                    <constraint firstAttribute="height" constant="54" id="heu-Uq-ulE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OmJ-D9-rOv" firstAttribute="top" secondItem="pan-s0-q3y" secondAttribute="bottom" constant="20" id="2lF-5I-Qxf"/>
+                            <constraint firstItem="UfD-W2-cPT" firstAttribute="top" secondItem="OmJ-D9-rOv" secondAttribute="bottom" constant="20" id="EJz-VH-tDz"/>
+                            <constraint firstItem="UfD-W2-cPT" firstAttribute="leading" secondItem="yAl-ki-3AT" secondAttribute="leadingMargin" id="IlB-vw-rgL"/>
+                            <constraint firstItem="CID-IQ-9mB" firstAttribute="centerX" secondItem="yAl-ki-3AT" secondAttribute="centerX" id="KLF-DL-FQh"/>
+                            <constraint firstItem="3RQ-QL-3JI" firstAttribute="leading" secondItem="yAl-ki-3AT" secondAttribute="leading" constant="16" id="Ot8-AF-H9K"/>
+                            <constraint firstItem="0ER-ri-45M" firstAttribute="top" secondItem="UfD-W2-cPT" secondAttribute="bottom" constant="8" id="SiP-19-V1p"/>
+                            <constraint firstItem="CID-IQ-9mB" firstAttribute="leading" secondItem="yAl-ki-3AT" secondAttribute="leading" constant="16" id="YNk-vl-840"/>
+                            <constraint firstItem="0ER-ri-45M" firstAttribute="centerX" secondItem="yAl-ki-3AT" secondAttribute="centerX" id="d2Z-KS-uzQ"/>
+                            <constraint firstAttribute="trailing" secondItem="3RQ-QL-3JI" secondAttribute="trailing" constant="16" id="hB5-hC-fft"/>
+                            <constraint firstItem="UfD-W2-cPT" firstAttribute="trailing" secondItem="yAl-ki-3AT" secondAttribute="trailingMargin" id="j1e-Ng-EQD"/>
+                            <constraint firstItem="CID-IQ-9mB" firstAttribute="top" secondItem="0ER-ri-45M" secondAttribute="bottom" constant="8" id="jWU-hm-H5v"/>
+                            <constraint firstItem="3RQ-QL-3JI" firstAttribute="top" secondItem="CID-IQ-9mB" secondAttribute="bottom" constant="8" id="kJT-Ka-EfN"/>
+                            <constraint firstItem="OmJ-D9-rOv" firstAttribute="centerX" secondItem="yAl-ki-3AT" secondAttribute="centerX" id="ofh-jZ-qOo"/>
+                            <constraint firstAttribute="trailing" secondItem="CID-IQ-9mB" secondAttribute="trailing" constant="16" id="sfe-WL-EHN"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="ME" id="ezC-zZ-LAf"/>
+                    <navigationItem key="navigationItem" title="ME" id="ezC-zZ-LAf">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="YfJ-ac-4Ie">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="logOutAction:" destination="pz1-U0-dna" id="taR-6b-bmR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="userBioLabel" destination="0ER-ri-45M" id="9OS-vd-lwZ"/>
+                        <outlet property="userCountryLabel" destination="3RQ-QL-3JI" id="Oqh-bX-ia1"/>
+                        <outlet property="userEmailLabel" destination="CID-IQ-9mB" id="dLZ-Gr-UCV"/>
+                        <outlet property="userImageView" destination="OmJ-D9-rOv" id="5xJ-9J-RpQ"/>
+                        <outlet property="usernameLabel" destination="UfD-W2-cPT" id="ZQa-6T-p9g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FaJ-wy-QLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

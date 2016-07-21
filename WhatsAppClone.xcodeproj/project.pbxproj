@@ -10,6 +10,7 @@
 		2714D3421D4030D500E31E70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2714D3411D4030D500E31E70 /* GoogleService-Info.plist */; };
 		2714D3441D4035A300E31E70 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714D3431D4035A300E31E70 /* AuthenticationService.swift */; };
 		2714D3461D4038B600E31E70 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714D3451D4038B600E31E70 /* SCLAlertView.swift */; };
+		2714D3501D41871600E31E70 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714D34F1D41871600E31E70 /* User.swift */; };
 		275033E81D368F9300D8FBBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275033E71D368F9300D8FBBE /* AppDelegate.swift */; };
 		275033ED1D368F9300D8FBBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275033EB1D368F9300D8FBBE /* Main.storyboard */; };
 		275033EF1D368F9300D8FBBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275033EE1D368F9300D8FBBE /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		2714D3411D4030D500E31E70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2714D3431D4035A300E31E70 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		2714D3451D4038B600E31E70 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		2714D34F1D41871600E31E70 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		275033E41D368F9300D8FBBE /* WhatsAppClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsAppClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		275033E71D368F9300D8FBBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		275033EC1D368F9300D8FBBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				2750340F1D36906200D8FBBE /* Images */,
 				275034101D36907100D8FBBE /* Customizable Controls Class */,
 				2714D3431D4035A300E31E70 /* AuthenticationService.swift */,
+				2714D34F1D41871600E31E70 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				275034151D36910000D8FBBE /* LoginViewController.swift in Sources */,
 				2714D3461D4038B600E31E70 /* SCLAlertView.swift in Sources */,
 				275033E81D368F9300D8FBBE /* AppDelegate.swift in Sources */,
+				2714D3501D41871600E31E70 /* User.swift in Sources */,
 				275034271D3693A400D8FBBE /* ChatViewController.swift in Sources */,
 				275034171D36910000D8FBBE /* ResetPasswordViewController.swift in Sources */,
 				275034491D36E8B700D8FBBE /* SettingsTableViewController.swift in Sources */,
