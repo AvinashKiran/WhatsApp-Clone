@@ -30,7 +30,7 @@ struct User {
         country = snapshot.value!["country"] as! String
         biography = snapshot.value!["biography"] as! String
         photoURL = snapshot.value!["photoURL"] as! String
-        uid = snapshot.value!["uid"] as! String
+        uid = snapshot.value!["uid"] as? String
 
     }
     

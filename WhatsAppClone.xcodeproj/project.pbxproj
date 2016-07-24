@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271292451D4445D600F928A6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271292441D4445D600F928A6 /* Message.swift */; };
+		271292471D4449E000F928A6 /* ChatFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271292461D4449E000F928A6 /* ChatFunctions.swift */; };
+		271292491D444B9D00F928A6 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271292481D444B9D00F928A6 /* ChatRoom.swift */; };
 		2714D3421D4030D500E31E70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2714D3411D4030D500E31E70 /* GoogleService-Info.plist */; };
 		2714D3441D4035A300E31E70 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714D3431D4035A300E31E70 /* AuthenticationService.swift */; };
 		2714D3461D4038B600E31E70 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714D3451D4038B600E31E70 /* SCLAlertView.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		271292441D4445D600F928A6 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		271292461D4449E000F928A6 /* ChatFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatFunctions.swift; sourceTree = "<group>"; };
+		271292481D444B9D00F928A6 /* ChatRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		2714D3411D4030D500E31E70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2714D3431D4035A300E31E70 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		2714D3451D4038B600E31E70 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
@@ -121,6 +127,9 @@
 				275034101D36907100D8FBBE /* Customizable Controls Class */,
 				2714D3431D4035A300E31E70 /* AuthenticationService.swift */,
 				2714D34F1D41871600E31E70 /* User.swift */,
+				271292461D4449E000F928A6 /* ChatFunctions.swift */,
+				271292481D444B9D00F928A6 /* ChatRoom.swift */,
+				271292441D4445D600F928A6 /* Message.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -363,6 +372,7 @@
 				2750341F1D3692C000D8FBBE /* TabBarController.swift in Sources */,
 				275034211D36931800D8FBBE /* UsersTableViewController.swift in Sources */,
 				275034251D36939600D8FBBE /* MyProfileViewController.swift in Sources */,
+				271292451D4445D600F928A6 /* Message.swift in Sources */,
 				2714D3441D4035A300E31E70 /* AuthenticationService.swift in Sources */,
 				275034071D368FFF00D8FBBE /* CustomizableTextField.swift in Sources */,
 				275034051D368FFF00D8FBBE /* CustomizableButton.swift in Sources */,
@@ -370,8 +380,10 @@
 				275034151D36910000D8FBBE /* LoginViewController.swift in Sources */,
 				2714D3461D4038B600E31E70 /* SCLAlertView.swift in Sources */,
 				275033E81D368F9300D8FBBE /* AppDelegate.swift in Sources */,
+				271292471D4449E000F928A6 /* ChatFunctions.swift in Sources */,
 				2714D3501D41871600E31E70 /* User.swift in Sources */,
 				275034271D3693A400D8FBBE /* ChatViewController.swift in Sources */,
+				271292491D444B9D00F928A6 /* ChatRoom.swift in Sources */,
 				275034171D36910000D8FBBE /* ResetPasswordViewController.swift in Sources */,
 				275034491D36E8B700D8FBBE /* SettingsTableViewController.swift in Sources */,
 			);
