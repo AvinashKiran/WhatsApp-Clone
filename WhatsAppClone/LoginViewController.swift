@@ -14,6 +14,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginView: UIView!
     
+    var authService = AuthenticationService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -78,6 +80,25 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
  
     // Loging in the User
     @IBAction func loginAction(sender: AnyObject) {
+        self.view.endEditing(true)
+    let email = usernameTextField.text!.lowercaseString
+    let finalEmail = email.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+    let password = passwordTextField.text!
+        
+        if finalEmail.isEmpty || password.isEmpty || finalEmail.characters.count < 8 {
+            //Present an alertView to your user
+            
+            let alertView = SCLAlertView()
+            alertView.showError("OOPS", subTitle: "Hey, it seems like you did not fill correctly the information")
+            
+        }else {
+            
+            authService.signIn(finalEmail, password: password)
+        }
+        
+        
+        
+        
     }
 
 }

@@ -23,12 +23,6 @@
 		275034231D36932600D8FBBE /* ConversationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275034221D36932600D8FBBE /* ConversationsTableViewController.swift */; };
 		275034251D36939600D8FBBE /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275034241D36939600D8FBBE /* MyProfileViewController.swift */; };
 		275034271D3693A400D8FBBE /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275034261D3693A400D8FBBE /* ChatViewController.swift */; };
-		2750342A1D3693E200D8FBBE /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275034291D3693E200D8FBBE /* CommentsTableViewController.swift */; };
-		2750342C1D3693EF00D8FBBE /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750342B1D3693EF00D8FBBE /* PostsTableViewController.swift */; };
-		2750342E1D36940100D8FBBE /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750342D1D36940100D8FBBE /* AddPostViewController.swift */; };
-		275034301D36941600D8FBBE /* CommentTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750342F1D36941600D8FBBE /* CommentTextTableViewCell.swift */; };
-		275034321D36942300D8FBBE /* PostTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275034311D36942300D8FBBE /* PostTextTableViewCell.swift */; };
-		275034341D36942C00D8FBBE /* PostImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275034331D36942C00D8FBBE /* PostImageTableViewCell.swift */; };
 		275034361D36943E00D8FBBE /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275034351D36943E00D8FBBE /* UsersTableViewCell.swift */; };
 		2750343D1D36A44F00D8FBBE /* LoginBG.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2750343A1D36A44F00D8FBBE /* LoginBG.jpeg */; };
 		2750343E1D36A44F00D8FBBE /* ResetBG.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2750343B1D36A44F00D8FBBE /* ResetBG.jpeg */; };
@@ -36,7 +30,16 @@
 		275034451D36E73B00D8FBBE /* ConversationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275034441D36E73B00D8FBBE /* ConversationsTableViewCell.swift */; };
 		275034471D36E87B00D8FBBE /* plachold.png in Resources */ = {isa = PBXBuildFile; fileRef = 275034461D36E87B00D8FBBE /* plachold.png */; };
 		275034491D36E8B700D8FBBE /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275034481D36E8B700D8FBBE /* SettingsTableViewController.swift */; };
-		2750344C1D36FE9000D8FBBE /* CommentImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750344B1D36FE9000D8FBBE /* CommentImageTableViewCell.swift */; };
+		27A496291D726C3700CC27BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A496281D726C3700CC27BC /* User.swift */; };
+		27A4962B1D726C4B00CC27BC /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A4962A1D726C4B00CC27BC /* SCLAlertView.swift */; };
+		27A4962D1D726DEE00CC27BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27A4962C1D726DEE00CC27BC /* GoogleService-Info.plist */; };
+		27A4962F1D72931300CC27BC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A4962E1D72931300CC27BC /* Message.swift */; };
+		27A496311D72942100CC27BC /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A496301D72942100CC27BC /* ChatRoom.swift */; };
+		27A496331D7296CC00CC27BC /* ChatFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A496321D7296CC00CC27BC /* ChatFunctions.swift */; };
+		27A496391D73639100CC27BC /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A496381D73639100CC27BC /* EditProfileTableViewController.swift */; };
+		27A4963B1D73803600CC27BC /* whatsapp-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27A4963A1D73803600CC27BC /* whatsapp-bg.jpg */; };
+		27C71B631D726BF300535B8C /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C71B621D726BF300535B8C /* AuthenticationService.swift */; };
+		FCE0244ACB9F46E774E4AA44 /* Pods_WhatsAppClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9383BA9B2782C795F492E929 /* Pods_WhatsAppClone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,12 +61,6 @@
 		275034221D36932600D8FBBE /* ConversationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsTableViewController.swift; sourceTree = "<group>"; };
 		275034241D36939600D8FBBE /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		275034261D3693A400D8FBBE /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		275034291D3693E200D8FBBE /* CommentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
-		2750342B1D3693EF00D8FBBE /* PostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
-		2750342D1D36940100D8FBBE /* AddPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
-		2750342F1D36941600D8FBBE /* CommentTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTextTableViewCell.swift; sourceTree = "<group>"; };
-		275034311D36942300D8FBBE /* PostTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTextTableViewCell.swift; sourceTree = "<group>"; };
-		275034331D36942C00D8FBBE /* PostImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageTableViewCell.swift; sourceTree = "<group>"; };
 		275034351D36943E00D8FBBE /* UsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		2750343A1D36A44F00D8FBBE /* LoginBG.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LoginBG.jpeg; sourceTree = "<group>"; };
 		2750343B1D36A44F00D8FBBE /* ResetBG.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ResetBG.jpeg; sourceTree = "<group>"; };
@@ -72,7 +69,18 @@
 		275034441D36E73B00D8FBBE /* ConversationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsTableViewCell.swift; sourceTree = "<group>"; };
 		275034461D36E87B00D8FBBE /* plachold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plachold.png; sourceTree = "<group>"; };
 		275034481D36E8B700D8FBBE /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
-		2750344B1D36FE9000D8FBBE /* CommentImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentImageTableViewCell.swift; sourceTree = "<group>"; };
+		27A496281D726C3700CC27BC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		27A4962A1D726C4B00CC27BC /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		27A4962C1D726DEE00CC27BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		27A4962E1D72931300CC27BC /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		27A496301D72942100CC27BC /* ChatRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		27A496321D7296CC00CC27BC /* ChatFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatFunctions.swift; sourceTree = "<group>"; };
+		27A496381D73639100CC27BC /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
+		27A4963A1D73803600CC27BC /* whatsapp-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "whatsapp-bg.jpg"; sourceTree = "<group>"; };
+		27C71B621D726BF300535B8C /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		9383BA9B2782C795F492E929 /* Pods_WhatsAppClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsAppClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBBC0111593CC0FB105F3958 /* Pods-WhatsAppClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsAppClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsAppClone/Pods-WhatsAppClone.release.xcconfig"; sourceTree = "<group>"; };
+		C255CA61BD6152E70CDDEC3C /* Pods-WhatsAppClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsAppClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsAppClone/Pods-WhatsAppClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE0244ACB9F46E774E4AA44 /* Pods_WhatsAppClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +100,8 @@
 			children = (
 				275033E61D368F9300D8FBBE /* WhatsAppClone */,
 				275033E51D368F9300D8FBBE /* Products */,
+				D7C2A184B9D0905B2142CBD1 /* Pods */,
+				5BCFF82A24C1758116AF8F31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +126,12 @@
 		2750340D1D36902700D8FBBE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				27A4962A1D726C4B00CC27BC /* SCLAlertView.swift */,
+				27C71B621D726BF300535B8C /* AuthenticationService.swift */,
+				27A496281D726C3700CC27BC /* User.swift */,
+				27A4962E1D72931300CC27BC /* Message.swift */,
+				27A496301D72942100CC27BC /* ChatRoom.swift */,
+				27A496321D7296CC00CC27BC /* ChatFunctions.swift */,
 				2750340F1D36906200D8FBBE /* Images */,
 				275034101D36907100D8FBBE /* Customizable Controls Class */,
 			);
@@ -129,7 +146,6 @@
 				2750344A1D36E8CF00D8FBBE /* Settings View Controllers */,
 				275034371D36948000D8FBBE /* Chat View Controllers */,
 				275034381D3694C100D8FBBE /* My Profile View Controllers */,
-				275034391D3694D200D8FBBE /* Posts View Controllers */,
 				275034281D3693AD00D8FBBE /* Authentication Controllers */,
 			);
 			name = Controllers;
@@ -138,6 +154,7 @@
 		2750340F1D36906200D8FBBE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				27A4963A1D73803600CC27BC /* whatsapp-bg.jpg */,
 				275034461D36E87B00D8FBBE /* plachold.png */,
 				2750343A1D36A44F00D8FBBE /* LoginBG.jpeg */,
 				2750343B1D36A44F00D8FBBE /* ResetBG.jpeg */,
@@ -165,6 +182,7 @@
 				275033F01D368F9300D8FBBE /* LaunchScreen.storyboard */,
 				275033F31D368F9300D8FBBE /* Info.plist */,
 				275034401D36E6B000D8FBBE /* WhatsAppClone-Bridging-Header.h */,
+				27A4962C1D726DEE00CC27BC /* GoogleService-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,26 +217,30 @@
 			name = "My Profile View Controllers";
 			sourceTree = "<group>";
 		};
-		275034391D3694D200D8FBBE /* Posts View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				275034291D3693E200D8FBBE /* CommentsTableViewController.swift */,
-				2750342B1D3693EF00D8FBBE /* PostsTableViewController.swift */,
-				2750342D1D36940100D8FBBE /* AddPostViewController.swift */,
-				2750342F1D36941600D8FBBE /* CommentTextTableViewCell.swift */,
-				2750344B1D36FE9000D8FBBE /* CommentImageTableViewCell.swift */,
-				275034311D36942300D8FBBE /* PostTextTableViewCell.swift */,
-				275034331D36942C00D8FBBE /* PostImageTableViewCell.swift */,
-			);
-			name = "Posts View Controllers";
-			sourceTree = "<group>";
-		};
 		2750344A1D36E8CF00D8FBBE /* Settings View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				275034481D36E8B700D8FBBE /* SettingsTableViewController.swift */,
+				27A496381D73639100CC27BC /* EditProfileTableViewController.swift */,
 			);
 			name = "Settings View Controllers";
+			sourceTree = "<group>";
+		};
+		5BCFF82A24C1758116AF8F31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9383BA9B2782C795F492E929 /* Pods_WhatsAppClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7C2A184B9D0905B2142CBD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C255CA61BD6152E70CDDEC3C /* Pods-WhatsAppClone.debug.xcconfig */,
+				BBBC0111593CC0FB105F3958 /* Pods-WhatsAppClone.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 275033F61D368F9300D8FBBE /* Build configuration list for PBXNativeTarget "WhatsAppClone" */;
 			buildPhases = (
+				8AD4E62021D9EE53C872E6AC /* 📦 Check Pods Manifest.lock */,
 				275033E01D368F9300D8FBBE /* Sources */,
 				275033E11D368F9300D8FBBE /* Frameworks */,
 				275033E21D368F9300D8FBBE /* Resources */,
+				C1FAA972924371ABA5893CCB /* 📦 Embed Pods Frameworks */,
+				7DDCD9EEA1691C98B49BD8CB /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,6 +305,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2750343F1D36A44F00D8FBBE /* SignupBG.jpeg in Resources */,
+				27A4963B1D73803600CC27BC /* whatsapp-bg.jpg in Resources */,
+				27A4962D1D726DEE00CC27BC /* GoogleService-Info.plist in Resources */,
 				2750343E1D36A44F00D8FBBE /* ResetBG.jpeg in Resources */,
 				275033F21D368F9300D8FBBE /* LaunchScreen.storyboard in Resources */,
 				275033EF1D368F9300D8FBBE /* Assets.xcassets in Resources */,
@@ -292,32 +319,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7DDCD9EEA1691C98B49BD8CB /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatsAppClone/Pods-WhatsAppClone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AD4E62021D9EE53C872E6AC /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1FAA972924371ABA5893CCB /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatsAppClone/Pods-WhatsAppClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		275033E01D368F9300D8FBBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				275034231D36932600D8FBBE /* ConversationsTableViewController.swift in Sources */,
-				2750342E1D36940100D8FBBE /* AddPostViewController.swift in Sources */,
 				275034161D36910000D8FBBE /* SignupViewController.swift in Sources */,
 				275034361D36943E00D8FBBE /* UsersTableViewCell.swift in Sources */,
 				275034451D36E73B00D8FBBE /* ConversationsTableViewCell.swift in Sources */,
-				2750342A1D3693E200D8FBBE /* CommentsTableViewController.swift in Sources */,
+				27A4962B1D726C4B00CC27BC /* SCLAlertView.swift in Sources */,
 				2750341F1D3692C000D8FBBE /* TabBarController.swift in Sources */,
 				275034211D36931800D8FBBE /* UsersTableViewController.swift in Sources */,
-				275034321D36942300D8FBBE /* PostTextTableViewCell.swift in Sources */,
+				27A496391D73639100CC27BC /* EditProfileTableViewController.swift in Sources */,
+				27A4962F1D72931300CC27BC /* Message.swift in Sources */,
 				275034251D36939600D8FBBE /* MyProfileViewController.swift in Sources */,
+				27A496291D726C3700CC27BC /* User.swift in Sources */,
+				27C71B631D726BF300535B8C /* AuthenticationService.swift in Sources */,
 				275034071D368FFF00D8FBBE /* CustomizableTextField.swift in Sources */,
-				2750344C1D36FE9000D8FBBE /* CommentImageTableViewCell.swift in Sources */,
-				275034341D36942C00D8FBBE /* PostImageTableViewCell.swift in Sources */,
 				275034051D368FFF00D8FBBE /* CustomizableButton.swift in Sources */,
 				275034081D368FFF00D8FBBE /* CustomizableImageView.swift in Sources */,
 				275034151D36910000D8FBBE /* LoginViewController.swift in Sources */,
-				275034301D36941600D8FBBE /* CommentTextTableViewCell.swift in Sources */,
 				275033E81D368F9300D8FBBE /* AppDelegate.swift in Sources */,
 				275034271D3693A400D8FBBE /* ChatViewController.swift in Sources */,
 				275034171D36910000D8FBBE /* ResetPasswordViewController.swift in Sources */,
-				2750342C1D3693EF00D8FBBE /* PostsTableViewController.swift in Sources */,
+				27A496331D7296CC00CC27BC /* ChatFunctions.swift in Sources */,
+				27A496311D72942100CC27BC /* ChatRoom.swift in Sources */,
 				275034491D36E8B700D8FBBE /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +504,7 @@
 		};
 		275033F71D368F9300D8FBBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C255CA61BD6152E70CDDEC3C /* Pods-WhatsAppClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -443,6 +519,7 @@
 		};
 		275033F81D368F9300D8FBBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBBC0111593CC0FB105F3958 /* Pods-WhatsAppClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

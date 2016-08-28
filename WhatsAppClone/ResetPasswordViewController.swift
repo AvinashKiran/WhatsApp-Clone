@@ -11,7 +11,8 @@ import UIKit
 class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
-
+    var authService = AuthenticationService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,6 +39,8 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
     // Resetting the User Password
     @IBAction func resetPasswordAction(sender: AnyObject) {
         
+        let finalEmail = emailTextField.text!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        authService.resetPassword(finalEmail)
     }
     
     // Dismissing all editing actions when User Tap or Swipe down on the Main View
