@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBG.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="qAc-bf-w9h">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPa-Q9-qcg">
                                 <rect key="frame" x="20" y="144" width="280" height="280"/>
                                 <subviews>
@@ -119,8 +122,12 @@
                                     <constraint firstItem="VoD-sX-peX" firstAttribute="top" secondItem="84d-II-puV" secondAttribute="bottom" constant="12" id="xLF-VJ-iQv"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBG.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="qAc-bf-w9h">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="m9g-EZ-1Yy">
+                                <rect key="frame" x="102" y="20" width="116" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="4fy-4w-NMU"/>
+                                    <constraint firstAttribute="width" constant="116" id="a1f-ok-7b4"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -130,7 +137,10 @@
                             <constraint firstItem="RPa-Q9-qcg" firstAttribute="centerX" secondItem="a4k-Ui-VVM" secondAttribute="centerX" id="L7a-Ls-B4J"/>
                             <constraint firstItem="RPa-Q9-qcg" firstAttribute="centerY" secondItem="a4k-Ui-VVM" secondAttribute="centerY" id="LbC-PL-pYc"/>
                             <constraint firstItem="qAc-bf-w9h" firstAttribute="top" secondItem="a4k-Ui-VVM" secondAttribute="top" id="V7f-ot-68F"/>
+                            <constraint firstItem="m9g-EZ-1Yy" firstAttribute="centerX" secondItem="a4k-Ui-VVM" secondAttribute="centerX" id="VTh-q2-G28"/>
+                            <constraint firstItem="m9g-EZ-1Yy" firstAttribute="top" secondItem="czm-rv-9DI" secondAttribute="bottom" id="eNJ-Ul-tMn"/>
                             <constraint firstItem="Gc1-fS-0Gq" firstAttribute="top" secondItem="qAc-bf-w9h" secondAttribute="bottom" id="eQm-JO-9GO"/>
+                            <constraint firstItem="RPa-Q9-qcg" firstAttribute="top" secondItem="m9g-EZ-1Yy" secondAttribute="bottom" constant="8" id="nyH-wJ-2G0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1144,6 +1154,7 @@
         <image name="SignupBG.jpeg" width="4356" height="3443"/>
         <image name="comments" width="50" height="50"/>
         <image name="comments_filled" width="50" height="50"/>
+        <image name="logo.png" width="300" height="300"/>
         <image name="settings" width="50" height="50"/>
         <image name="settings_filled" width="50" height="50"/>
         <image name="user-placeholder.jpg" width="300" height="300"/>
