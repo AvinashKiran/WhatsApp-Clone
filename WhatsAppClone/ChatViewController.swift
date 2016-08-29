@@ -82,42 +82,35 @@ class ChatViewController: JSQMessagesViewController, UIImagePickerControllerDele
             let displayName = snapshot.value!["username"] as! String
             let mediaType = snapshot.value!["mediaType"] as! String
             let mediaUrl = snapshot.value!["mediaUrl"] as! String
-
-            if mediaType == "TEXT" {
+            
+            
+            
+            
+            
+            
+            switch mediaType {
+            case "TEXT":
                 
                 self.messages.append(JSQMessage(senderId: senderId, displayName: displayName, text: text))
-                self.finishReceivingMessage()
 
-            }else if mediaType == "PHOTO" {
+            case "PHOTO":
                 
-                FIRStorage.storage().referenceForURL(mediaUrl).dataWithMaxSize(1 * 1024 * 1024, completion: { (imgData, error) in
-                    if error == nil {
-                        if let data = imgData {
-                        let picture = UIImage(data: data)
-                        let photo = JSQPhotoMediaItem(image: picture)
-                        
-                        self.messages.append(JSQMessage(senderId: senderId, displayName: displayName, media: photo))
-                            self.finishReceivingMessage()
-    
-                        }
-                        
-                    }else {
-                        let alertView = SCLAlertView()
-                        alertView.showError("OOPS", subTitle: error!.localizedDescription)
-                    }
-                    
-                })
-            }else if mediaType == "VIDEO" {
+                let picture = UIImage(data: NSData(contentsOfURL: NSURL(string: mediaUrl)!)!)
+                let photo = JSQPhotoMediaItem(image: picture)
+                self.messages.append(JSQMessage(senderId: senderId, displayName: displayName, media: photo))
+
+            case "VIDEO":
                 
                 if let url = NSURL(string: mediaUrl) {
-                            let video = JSQVideoMediaItem(fileURL: url, isReadyToPlay: true)
-                            
-                            self.messages.append(JSQMessage(senderId: senderId, displayName: displayName, media: video))
-                            self.finishReceivingMessage()
+                let video = JSQVideoMediaItem(fileURL: url, isReadyToPlay: true)
+                self.messages.append(JSQMessage(senderId: senderId, displayName: displayName, media: video))
 
                     }
+                
+            default: break
             }
             
+            self.finishReceivingMessage()
             
         }) { (error) in
             let alertView = SCLAlertView()
@@ -250,7 +243,6 @@ class ChatViewController: JSQMessagesViewController, UIImagePickerControllerDele
     
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        
         if let picture = info[UIImagePickerControllerOriginalImage] as? UIImage {
             
             

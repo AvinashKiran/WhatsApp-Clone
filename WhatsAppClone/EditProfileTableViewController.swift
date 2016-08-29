@@ -114,23 +114,6 @@ class EditProfileTableViewController: UITableViewController, UIImagePickerContro
                 self.biographyTextField.text = user.biography
                 self.countryTextField.text = user.country
                 
-                FIRStorage.storage().referenceForURL(user.photoURL).dataWithMaxSize(1 * 1024 * 1024, completion: { (imgData, error) in
-                    if let error = error {
-                        let alertView = SCLAlertView()
-                        alertView.showError("OOPS", subTitle: error.localizedDescription)
-                        
-                    }else{
-                        
-                        dispatch_async(dispatch_get_main_queue(), {
-                            if let data = imgData {
-                                self.userImageView.image = UIImage(data: data)
-                            }
-                        })
-                    }
-                    
-                })
-                
-                
             }
             
             
@@ -242,7 +225,6 @@ class EditProfileTableViewController: UITableViewController, UIImagePickerContro
     }
     
     func choosePictureAction() {
-        userImageView.image = nil
         let pickerController = UIImagePickerController()
         pickerController.delegate = self
         pickerController.allowsEditing = true
