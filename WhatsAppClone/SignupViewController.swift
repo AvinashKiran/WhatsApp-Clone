@@ -73,9 +73,11 @@ class SignupViewController: UIViewController,UITextFieldDelegate,UIPickerViewDel
         let imgData = UIImageJPEGRepresentation(userPicture!, 0.8)
         
         if finalEmail.isEmpty || finalEmail.characters.count < 8 || password.isEmpty || country.isEmpty || biography.isEmpty || username.isEmpty {
+            dispatch_async(dispatch_get_main_queue(), {
+
             let alertView = SCLAlertView()
             alertView.showError("OOPS", subTitle: "Hey, it seems like you did not fill correctly the information")
-            
+            })
 
         }else {
             

@@ -140,9 +140,11 @@ class EditProfileTableViewController: UITableViewController, UIImagePickerContro
         let imgData = UIImageJPEGRepresentation(userPicture!, 0.8)!
         
         if finalEmail.isEmpty || finalEmail.characters.count < 8 || country.isEmpty || biography.isEmpty || username.isEmpty {
-            let alertView = SCLAlertView()
-            alertView.showError("OOPS", subTitle: "Hey, it seems like you did not fill correctly the information")
-            
+            dispatch_async(dispatch_get_main_queue(), {
+                let alertView =  SCLAlertView()
+                alertView.showError("OOPS", subTitle: "Hey, it seems like you did not fill correctly the information")
+                
+            })
             
         }else {
             
@@ -160,9 +162,10 @@ class EditProfileTableViewController: UITableViewController, UIImagePickerContro
                         if error == nil {
                             print("email updated successfully")
                         }else {
-                            let alertView =  SCLAlertView()
-                            alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
-                            
+                            dispatch_async(dispatch_get_main_queue(), {
+                                let alertView =  SCLAlertView()
+                                alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
+                            })
                         }
                     })
                     
@@ -185,27 +188,29 @@ class EditProfileTableViewController: UITableViewController, UIImagePickerContro
                                 if error == nil {
                                     self.navigationController?.popToRootViewControllerAnimated(true)
                                 }else {
-                                    let alertView =  SCLAlertView()
-                                    alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
-                                    
+                                    dispatch_async(dispatch_get_main_queue(), {
+                                        let alertView =  SCLAlertView()
+                                        alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
+                                    })
 
                                 }
                             })
                         }
                         else {
                             
-                            let alertView =  SCLAlertView()
-                            alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
-                            
+                            dispatch_async(dispatch_get_main_queue(), {
+                                let alertView =  SCLAlertView()
+                                alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
+                            })
                         }
                         
                     })
                 }else {
                     
-                    let alertView =  SCLAlertView()
-                    alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
-                    
-                    
+                    dispatch_async(dispatch_get_main_queue(), {
+                        let alertView =  SCLAlertView()
+                        alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
+                    })
                 }
             }
             

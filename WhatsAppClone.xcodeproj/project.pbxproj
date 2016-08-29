@@ -38,6 +38,7 @@
 		27A496331D7296CC00CC27BC /* ChatFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A496321D7296CC00CC27BC /* ChatFunctions.swift */; };
 		27A496391D73639100CC27BC /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A496381D73639100CC27BC /* EditProfileTableViewController.swift */; };
 		27A4963B1D73803600CC27BC /* whatsapp-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27A4963A1D73803600CC27BC /* whatsapp-bg.jpg */; };
+		27A4963D1D73FCF100CC27BC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 27A4963C1D73FCF100CC27BC /* logo.png */; };
 		27C71B631D726BF300535B8C /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C71B621D726BF300535B8C /* AuthenticationService.swift */; };
 		FCE0244ACB9F46E774E4AA44 /* Pods_WhatsAppClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9383BA9B2782C795F492E929 /* Pods_WhatsAppClone.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		27A496321D7296CC00CC27BC /* ChatFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatFunctions.swift; sourceTree = "<group>"; };
 		27A496381D73639100CC27BC /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
 		27A4963A1D73803600CC27BC /* whatsapp-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "whatsapp-bg.jpg"; sourceTree = "<group>"; };
+		27A4963C1D73FCF100CC27BC /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		27C71B621D726BF300535B8C /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		9383BA9B2782C795F492E929 /* Pods_WhatsAppClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsAppClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBBC0111593CC0FB105F3958 /* Pods-WhatsAppClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsAppClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatsAppClone/Pods-WhatsAppClone.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				2750343B1D36A44F00D8FBBE /* ResetBG.jpeg */,
 				2750343C1D36A44F00D8FBBE /* SignupBG.jpeg */,
 				275033FF1D368FFF00D8FBBE /* user-placeholder.jpg */,
+				27A4963C1D73FCF100CC27BC /* logo.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				275033ED1D368F9300D8FBBE /* Main.storyboard in Resources */,
 				275034471D36E87B00D8FBBE /* plachold.png in Resources */,
 				2750343D1D36A44F00D8FBBE /* LoginBG.jpeg in Resources */,
+				27A4963D1D73FCF100CC27BC /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

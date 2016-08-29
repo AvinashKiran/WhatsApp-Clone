@@ -66,10 +66,10 @@ struct ChatFunctions{
             
             }) { (error) in
                 
-                let alertView = SCLAlertView()
-                alertView.showError("OOPS", subTitle: error.localizedDescription)
-                
-        }
+                dispatch_async(dispatch_get_main_queue(), {
+                    let alertView =  SCLAlertView()
+                    alertView.showError("😁OOPS😁", subTitle: error.localizedDescription)
+                })        }
         
         
     }

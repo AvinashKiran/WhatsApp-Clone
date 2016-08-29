@@ -54,9 +54,10 @@ struct AuthenticationService {
                 
             }else {
                 
-                let alertView =  SCLAlertView()
-                alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
-                
+                dispatch_async(dispatch_get_main_queue(), {
+                    let alertView =  SCLAlertView()
+                    alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
+                })
             }
         })
         
@@ -96,9 +97,10 @@ struct AuthenticationService {
                 
                 
             }else {
-                
+                dispatch_async(dispatch_get_main_queue(), {
                 let alertView =  SCLAlertView()
                 alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
+                     })
             }
         })
         
@@ -131,18 +133,18 @@ struct AuthenticationService {
                     }
                     else {
                         
-                        let alertView =  SCLAlertView()
-                        alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
-
-                    }
+                        dispatch_async(dispatch_get_main_queue(), {
+                            let alertView =  SCLAlertView()
+                            alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
+                        })                    }
                     
                 })
             }else {
                 
-                let alertView =  SCLAlertView()
-                alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
-
-                
+                dispatch_async(dispatch_get_main_queue(), {
+                    let alertView =  SCLAlertView()
+                    alertView.showError("😁OOPS😁", subTitle: error!.localizedDescription)
+                })
             }
         }
         

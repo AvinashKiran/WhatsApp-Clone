@@ -88,8 +88,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if finalEmail.isEmpty || password.isEmpty || finalEmail.characters.count < 8 {
             //Present an alertView to your user
             
-            let alertView = SCLAlertView()
-            alertView.showError("OOPS", subTitle: "Hey, it seems like you did not fill correctly the information")
+            dispatch_async(dispatch_get_main_queue(), {
+                let alertView =  SCLAlertView()
+                alertView.showError("OOPS", subTitle: "Hey, it seems like you did not fill correctly the information")
+            })
             
         }else {
             
